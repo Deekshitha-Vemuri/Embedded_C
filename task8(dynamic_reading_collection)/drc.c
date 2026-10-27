@@ -29,11 +29,10 @@ int main(){
         ptr[c++]=r;
         printf("enter next reading to continue or q to view: ");
     }
-   printf("Readings:\n");
+   printf("Count:%d\n",c);
     if(c>0){
         long long sum=0;
         for(int i=0;i<c;i++){
-            printf("%d ",ptr[i]);
             sum+=ptr[i];
         }
         printf("\n");
