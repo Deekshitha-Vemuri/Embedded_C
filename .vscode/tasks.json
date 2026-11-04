@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe build active file",
+			"command": "D:/SOFT/CTOOLS/mingw32/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-liphlpapi",
+				"-lws2_32"
+			],
+			"options": {
+				"cwd": "D:/SOFT/CTOOLS/mingw32/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: D:/SOFT/CTOOLS/mingw32/bin/gcc.exe"
+		}
+	]
+}
