@@ -12,7 +12,9 @@
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe",
 				"-liphlpapi",
-				"-lws2_32"
+				"-lws2_32",
+				"-lole32",
+				"-lm"
 			],
 			"options": {
 				"cwd": "D:/SOFT/CTOOLS/mingw32/bin"
