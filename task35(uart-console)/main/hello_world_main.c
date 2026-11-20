@@ -82,7 +82,7 @@ void app_main(void)
 
                     if (strcmp(command, "STATUS") == 0)
                     {
-						printf("STATUS command received!\n");
+						//printf("STATUS command received!\n");
                         int64_t time_us = esp_timer_get_time();
                         int64_t uptime_ms = time_us / 1000;
 
