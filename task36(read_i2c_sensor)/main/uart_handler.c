@@ -3,7 +3,6 @@
 #include "driver/uart.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-
 #include <string.h>
 
 #define UART_PORT       UART_NUM_0
@@ -109,8 +108,6 @@ esp_err_t uart_handler_receive_command(
         command[index++] = received_char;
     }
 }
-
-
 esp_err_t uart_handler_send_response(const char *response)
 {
     if (response == NULL)
